@@ -10,6 +10,12 @@ int main(){
     
     std::vector<int>::iterator scorePtr = playerScores.begin();
     
+    int i = 0;
+    do{
+        std :: cout << playerScores[i] << " ";
+        ++i;
+    }while(i<playerScores.size());
+
     std::cout << std::endl << std::endl;
     return (0);
 }

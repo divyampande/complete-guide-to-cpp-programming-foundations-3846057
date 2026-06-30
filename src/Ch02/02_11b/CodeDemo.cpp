@@ -15,12 +15,12 @@ int main(){
     std::cout << "Fahrenheit: " << fahrenheit << std::endl;
     std::cout << "Celsius   : " << celsius << std::endl;
 
-    float weight = 10.99;
+    long double weight = 10.99;
     
     std::cout << std::endl;
     std::cout << "Float          : " << weight << std::endl;
-    std::cout << "Integer part   : " << weight << std::endl;
-    std::cout << "Fractional part: " << weight << std::endl;
+    std::cout << "Integer part   : " << static_cast<int>(weight) << std::endl;
+    std::cout << "Fractional part: " << (long int) ((weight - static_cast<long int>(weight))*1000000000000000) << std::endl;
 
     std::cout << std::endl << std::endl;
     return 0;
